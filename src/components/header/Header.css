@@ -1,0 +1,39 @@
+.header{
+height: 34vw;
+margin: 30px auto;
+background: url('/header_img.png') no-repeat;
+background-size: contain;
+position: relative;
+}
+.header-contents {
+  position: absolute;
+  display: flex;
+  align-items: start;
+flex-direction: column;
+grid-area: 10px;
+max-width: 50%;
+bottom: 10%;
+left: 20px;
+color: white;
+animation: fadeIn 3s ;  /* load the text in the box after a certain period of time*/
+}
+.header-contents h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.header-contents p{
+    color: rgb(239, 245, 235);
+    font-size: 20px;
+}
+.header-contents button{
+    width: 100px;
+    margin-top: 18px;
+    border: none;
+padding: 8px;
+border-radius: 12px 13px 14px;
+}
+.header-contents button:hover{
+background-color: black;
+color: white;
+transition: 1s;
+}

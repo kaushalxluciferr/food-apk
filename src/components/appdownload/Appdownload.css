@@ -1,0 +1,11 @@
+.app-download{
+    margin: auto auto;
+    margin-top: 100px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+.app-download p{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
