@@ -48,7 +48,11 @@ const navitage=useNavigate()
           <div>
             <div className="cart-total-details">
               <p>Subtotal</p>    
+<<<<<<< HEAD
               <p>${gettotalamount()}</p> 
+=======
+              <p>${gettotalamount()}</p> //
+>>>>>>> f6be9adbca4940cd0ba4916f000273cc943523fe
             </div>
               <hr />
             <div className="cart-total-details">

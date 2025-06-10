@@ -21,6 +21,7 @@ function App() {
 
         <Routes>
           {/* Only render Home on the root path, not on /cart */}
+          {/* <Route path="/" element={location.pathname !== '/<food-apk>/' ? <Home /> : null} /> */}
           <Route path="/" element={location.pathname !== '/cart' ? <Home /> : null} />
           <Route path="/placeorder" element={<Placeorder />} />
           <Route path="/cart" element={<Cart />} />
