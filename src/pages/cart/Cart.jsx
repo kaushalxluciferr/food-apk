@@ -21,7 +21,7 @@ const navitage=useNavigate()
         </div>
         <br/>
         <hr/>
-        {food_list.map((item,index)=>{
+        {food_list.map((item,index)=>{  // display the selected cart items 
           if(cartitems[item._id]>0)
           {
             return(
@@ -47,18 +47,18 @@ const navitage=useNavigate()
           <h2>Cart Total</h2>
           <div>
             <div className="cart-total-details">
-              <p>Subtotal</p>
-              <p>${gettotalamount()}</p>
+              <p>Subtotal</p>    
+              <p>${gettotalamount()}</p> 
             </div>
               <hr />
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>${gettotalamount()===0?0:2}</p>
+              <p>${gettotalamount()===0?0:2}</p>   {/* if mmy cart is epty then it displays 0 but if there is something on the cart then is displays 2*/}
             </div>
             <hr />
             <div className="cart-total-details">
-               <b>Total</b>
-               <b>${gettotalamount()+gettotalamount()===0?0:2}</b>
+               <b>Total</b>  {/* totl amnt of the item in the cart*/}
+               <b>${gettotalamount()+gettotalamount()===0?0:gettotalamount()+2}</b>
 
             </div>
           </div>
